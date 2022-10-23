@@ -7,8 +7,8 @@ npm install
 npm start
 
 Notice!
-To install on windows, I set package.json: "start": "react-scripts start",
-but on Ubuntu, package.json: "start": "WATCHPACK_POLLING=true react-scripts start",
+To install on windows, I set client/package.json: "start": "react-scripts start",
+but on Ubuntu, client/package.json: "start": "WATCHPACK_POLLING=true react-scripts start",
 ```
 
 To build SAM environment.
