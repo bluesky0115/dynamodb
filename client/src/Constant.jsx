@@ -26,9 +26,9 @@ const Constant = {
   API_SEARCH_URL: 'http://cth-web-stg.eba-eub8zyep.us-west-1.elasticbeanstalk.com/listings/search-x.api',
   API_DETAIL_URL: 'http://cth-web-stg.eba-eub8zyep.us-west-1.elasticbeanstalk.com/listings/detail-x/',
 
-  // TEST_API_DETAIL_URL: 'http://localhost:3001',
+  TEST_API_DETAIL_URL: 'http://localhost:3001',
 
-  TEST_API_DETAIL_URL: 'http://207.246.102.71:3001'
+  // TEST_API_DETAIL_URL: 'http://207.246.102.71:3001'
 }
 
 export default Constant;
