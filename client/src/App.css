@@ -1,0 +1,404 @@
+.App {
+    text-align: left;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+.fillterAndSignIn{
+    box-sizing: border-box;
+    position: absolute;
+    padding: 8px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+.filterContainer{
+    box-sizing: border-box;
+    display: flex;
+    background-color: white;
+    align-items: center;
+}
+.filterSearch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+.backWhite{
+    background-color: white;
+}
+.backGray{
+    background-color: rgb(249, 249, 251);
+}
+.paddingContainer{
+    padding:10px 15px;
+}
+.fontBold {
+    font-weight: 700 !important;
+}
+.font10{
+    font-size: 10px;
+    line-height: 16px;
+}
+.font12{
+    font-size: 12px !important;
+}
+.font14{
+    font-size: 14px;
+}
+.font15{
+    font-size: 15px;
+}
+.font16{
+    font-size: 16px !important;
+}
+.font18{
+    font-size: 18px !important;
+}
+.font20{
+    font-size: 20px;
+}
+.colorRed{
+    color: red;
+}
+.colorGray{
+    color: gray;
+}
+.hoverBlue:hover{
+    cursor: pointer;
+    color:rgb(0, 93, 223); 
+}
+.mb1{
+    margin-bottom: 8px;
+}
+.mb2{
+    margin-bottom: 20px;
+}
+.mt1{
+    margin-top: 10px;
+}
+.mr5{
+    margin-right: 5px;
+}
+.mr10{
+    margin-right: 10px !important;
+}
+.noMarginRight{
+    margin-right: 0px !important;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.w50{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+}
+.w100{
+    width: 100%;
+}
+.d-flex{
+    display: flex;
+}
+.flex1{
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+.alignCenter{
+    display: flex;
+    align-items: center;
+}
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+}
+.spaceArround{
+    display: flex;
+    justify-content: space-around;
+}
+.spaceCenter{
+    display: flex;
+    justify-content: center;
+}
+.borderRadius{
+    border-radius: 10px;
+}
+hr{
+    border-color: #ffffff;
+    margin: 0px;
+}
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+.textCenter{
+    text-align: center;
+}
+.textRight{
+    text-align: right;
+}
+.inlineBlock{
+    position: relative;
+    display: inline-block;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.hoverUnderline:hover{
+    text-decoration: underline;
+}
+.flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blueBoldUnderline{
+    color: rgb(0, 0, 136);
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+.closeModal{
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+}
+.smallLoading{
+    width: 30px;
+}
+.successBack{
+    background-color: rgb(226, 255, 226);
+}
+.blueLink{
+    color:#006AFF;
+    cursor: pointer;
+}
+.deleteItem{
+    position: relative;
+    color:#006AFF;
+    cursor: pointer;
+    font-weight: 600;   
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.deleteItem:hover{
+    border-bottom: 1px solid #006AFF;
+}
+.smallItem{
+    background: white;
+    border: 1px solid rgb(207, 207, 207);
+    padding:15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ============ Buttons ================================== */
+.largeBtn{
+    padding:10px !important;
+    font-size: 16px !important;
+}
+.btn{
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    line-height: inherit;
+}
+.btn:disabled:hover{
+    cursor: default;
+}
+.btn:disabled{
+    background-color:#bfbfbf !important; 
+}
+
+.btnPrimaryOutline{
+    border: 1px solid rgb(0, 106, 255);
+    color:rgb(0, 106, 255);
+}
+.btnPrimaryOutline:hover{
+    border: 1px solid rgb(0, 33, 80);
+    color:rgb(0, 33, 80);
+    background-color: rgb(242, 242, 255);
+}
+.btnPrimary{
+    background-color:rgb(0, 106, 255); 
+    color: white;
+}
+.btnPrimary:hover{
+    background-color:rgb(0, 72, 172); 
+}
+.btnDanger{
+    background-color:rgb(232, 43, 39); 
+    color: white;
+}
+.btnDanger:hover{
+    background-color:rgb(161, 3, 0); 
+}
+.whiteBtn{
+    border: 1px solid lightgray;
+    background-color: white;
+}
+.whiteBtn:hover{
+    background-color: #efefef;
+}
+.whiteBtn.active{
+    border: 1px solid rgb(0, 106, 255) !important;
+    background-color: #e9efff !important;
+}
+.btnBlack{
+    border: 1px solid #000;
+    background-color: #000;
+    color:white;
+}
+.btnBlack:hover{
+    border: 1px solid #000;
+    background-color: white;
+    color:#000;
+}
+.btnPre{
+    border-radius: 5px 0px 0px 5px;
+}
+.btnNext{
+    border-radius: 0px 5px 5px 0px;
+}
+.borderBottom{
+    border-bottom: 1px solid #ebebeb;
+}
+/* ================ Input box ================================ */
+.inlineInputContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inlineInputContainer .nextInputBox{
+    padding-left: 40px;
+}
+.inlineInputContainer .prevInputBox{
+    padding-right: 40px;
+}
+.inlineInputContainer .inlinePre{
+    position: absolute;
+    left: 15px;
+}
+.inlineInputContainer .inlineNext{
+    position: absolute;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(0, 79, 190);
+    font-size: 600;
+}
+.inputBox{
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 10px;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: 0;
+    display: inline-block;
+}
+.inputBox:hover{
+    border-color: rgb(0, 106, 255);
+}
+.inputBox:focus{
+    background-color: rgb(255, 255, 255) !important;
+    caret-color: rgb(0, 106, 255);
+    border-color: rgb(0, 106, 255);
+    transition: box-shadow .3s;
+    box-shadow: rgb(255 255 255) 0px 0px 0px 1px, rgb(166 229 255) 0px 0px 2px 3px, rgb(0 106 255) 0px 0px 2px 4px;
+}
+input[type="checkbox"]{
+    border: 2px solid rgb(167, 166, 171);
+    width:15px;
+    height: 15px;
+    margin: 0px 5px;
+}
+input[type="checkbox"]:hover{
+    border-color: rgb(0, 106, 255);
+}
+input[type="radio"]{
+    border-color: rgb(0, 106, 255);
+    border-width: 5px;
+    height: 16px;
+    width: 16px;
+}
+
+.pageMain{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.pageTitle{
+    font-family: "Ivar Headline", "Ivar Headline Subset", "Times New Roman", serif;
+    font-size: 40px;
+}
+.searchInputLogin{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 400px){
+    .mobileColum{
+        flex-direction: column;
+    }
+    .pageTitle{
+        font-size: 30px;
+    }
+}
+@media (max-width: 510px){
+    .searchInputLogin{
+        width: 100%;
+    }
+    .searchInputLogin form{
+        width: calc(100% - 40px);
+    }
+    .saveSearchMain, .saveSearchBtn{
+        width: 100%;
+    }
+    .filterSearch{
+        flex-direction: column;
+    }
+}
+@media (max-width: 770px){
+    .filterContainer{
+        flex-direction: column;
+        width:100%;
+    }
+    .filterSearch{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,32 @@
+.getLoan{
+    display: flex;
+    padding:15px;
+    background-color: #f2faff;
+    align-items: flex-start;
+    .shortDes{
+        position: absolute;
+        right: 6px;
+        bottom: 2px;
+        font-size: 10px;
+    }
+}
+.google-map{
+    height: 200px;
+}
+.preferedDay .swiper{
+    padding: 0px 30px;
+    box-sizing: border-box;
+    .whiteBtn{
+        height: 80px;
+    }
+    .swiper-button-next{
+        right:-2px;
+    }
+    .swiper-button-prev{
+        left:-2px;
+    }
+    .swiper-button-prev:after, .swiper-button-next:after{
+        font-size: 30px;
+    }
+}
+

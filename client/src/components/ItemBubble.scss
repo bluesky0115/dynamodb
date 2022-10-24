@@ -1,0 +1,67 @@
+.popOutDiv {
+    position: absolute;
+    left: -100px;
+    z-index: 10;
+    top:25px;
+
+    &:after {
+        position: absolute;
+        background: white;
+        box-shadow: 2px 0px 0px 0px rgb(178 178 178 / 40%);
+        content: "";
+        height: 15px;
+        left: 130px;
+        top: 0px;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 15px;
+    }
+    
+}
+
+.popContainer {
+    box-shadow: -2px 2px 2px 0 rgb(178 178 178 / 40%);
+    border-radius: 10px;
+    background: white;
+    display: block;
+    color: black;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.popItems {
+    margin: 15px;
+    display: flex;
+}
+
+.popImg {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.popDetail {
+    font-size: 17px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.popDetailTitle {
+    margin-bottom: 8px;
+}
+
+.roomsLine {
+    span { 
+        vertical-align: middle;
+    }
+    img {
+        height: 1.0em;
+        margin-right: .5em;
+        vertical-align: middle;
+    }
+}
+.marker {
+    cursor: pointer;
+    position: relative;
+}

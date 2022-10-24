@@ -1,0 +1,20 @@
+.accountDropdown{
+    padding:10px 0px;
+    .dropdownItem{
+        font-weight: 600;
+        padding:8px 15px;
+        cursor: pointer;
+        color: rgb(87, 87, 87);
+        &:hover{
+            color: black;
+            background-color: rgb(238, 250, 255);
+        }
+    }
+    a{
+        color: rgb(87, 87, 87);
+        text-decoration: none;
+        &:hover{
+            color: black;
+        }
+    }
+}

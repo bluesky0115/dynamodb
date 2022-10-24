@@ -1,0 +1,31 @@
+.moreMain{
+    padding: 20px;
+    font-size: 14px;
+    .moreItemText{
+        width: 150px;
+        font-size: 14px;
+        font-weight: bold;
+        @media (max-width: 400px){
+            width: 100%;
+        }
+    }
+    .moreValue{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .inputBox{
+            background-color: #f6f6fa;
+        }
+    }
+    .checkMain{
+        margin-left: 20px;
+    }
+}
+.resetLink{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px;
+}

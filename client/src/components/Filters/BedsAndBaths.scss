@@ -1,0 +1,18 @@
+.bedMain{
+    padding: 10px 20px;
+    font-size: 14px;
+    .bedBtnContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .grayOutlineBtn{
+            padding:7px 10px;
+            font-weight: bold;
+            flex:1;
+            &.active{
+                border-color:rgb(0, 106, 255);
+                background-color: #f2faff;
+            }
+        }
+    }
+}

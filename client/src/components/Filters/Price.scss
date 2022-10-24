@@ -1,0 +1,24 @@
+.priceContainer{
+    padding: 10px 20px;
+    font-size: 14px;
+    .PriceMain{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.columItem{
+    width: calc(50% - 7px);
+    .inputBox{
+        background-color: #f6f6fa;
+    }
+    .priceItem{
+        cursor: pointer;
+        margin-bottom: 5px;
+        font-size: 15px;
+        &:hover{
+            color: rgb(8, 17, 41);
+            text-decoration: underline;
+        }  
+    }
+}

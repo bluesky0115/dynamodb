@@ -1,0 +1,33 @@
+.row{
+    display: flex;
+    align-items: center;
+    padding:3px 3px 3px 10px;
+    height: 40px;
+    label{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        cursor: pointer;
+    }
+}
+.viewMoreBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        background-color: rgb(204, 220, 248);
+    }
+    svg{
+        transition: all 0.2s;
+    }
+}
+.saleMore{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(248, 248, 248);
+    padding: 10px 15px;
+}

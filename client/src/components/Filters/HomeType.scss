@@ -1,0 +1,24 @@
+.homeTypeMain{
+    padding: 10px 20px;
+    font-size: 14px;
+    .selectAllOrNot{
+        color: #0d4599;
+        cursor: pointer;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .homeTypeItem{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 16px;
+        margin-bottom: 6px;
+        label{
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.savedHomesFilter{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    .statusSelectItem{
+        display: flex;
+        padding: 7px 10px;
+        align-items: center;
+        flex: 1;
+        cursor: pointer;
+        input, label{
+            cursor: pointer;
+        }
+    }
+    .filterItem{
+        padding:8px 15px;
+        display: flex;
+        cursor: pointer;
+        .checkBox{
+            display: flex;
+            align-items: center;
+            width: 30px;
+        }
+        &:hover{
+            background-color: #ecf7ff;
+        }
+    }
+    .filterOrder{
+        cursor: pointer;
+        font-size: 25px;
+        color: rgb(0, 93, 223); 
+    }
+    .inputBox{
+        white-space: nowrap;
+        @media (max-width:500px){
+            width:calc(50% - 20px) !important;
+        }
+        .dropdownContainer {
+            @media (max-width:500px){
+                top: 45px;
+            }
+        }
+    }
+}
+
+.savedHomesCounts{
+    @media (max-width: 650px){
+        display: none;
+    }
+}
+.textElipse{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: calc(100% - 20px);
+}

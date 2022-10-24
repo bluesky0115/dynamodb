@@ -1,0 +1,49 @@
+.loginContainer{
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding:25px;
+    overflow: auto;
+    .welcome{
+        font-family: "Ivar Headline", "Ivar Headline Subset", "Adjusted Times", "Adjusted Times New Roman", "Times New Roman", serif;
+    }
+    .loginOrCreate{
+        display: flex;
+        border-bottom: 1px solid lightgray;
+        font-size: 18px;
+        margin-bottom: 15px;
+        .item{
+            cursor: pointer;
+            padding:12px 10px;
+            &:hover{
+                color:rgb(0, 93, 223); 
+            }
+            &.active{
+                border-bottom: 2px solid rgb(0, 93, 223);
+            }
+        }
+    }
+    .loginMain{
+        padding:0px 10px;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 15px;
+        .inputBox{
+            background-color: #f6f6fa;
+        }
+        .formErrorText{
+            margin: 0px;
+            color: red;
+            font-size: 12px;
+            line-height: 1;
+        }
+    }
+    .SocailLoginMain{
+        padding:0px 10px;
+        text-align: center;
+        .socialBtnIcon{
+            position: absolute;
+            left: 80px;
+            font-size: 25px;
+        }
+    }
+}
