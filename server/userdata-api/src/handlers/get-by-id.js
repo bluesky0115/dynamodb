@@ -6,17 +6,11 @@ const { DYNAMODB_SETTING, DYNAMODB_TABLE_NAME } = require('./../Constant.js');
 // import { DYNAMODB_SETTING, DYNAMODB_TABLE_NAME } from './../Constant.js';
 
 // const tableName = DYNAMODB_TABLE_NAME;
-const tableName = 'UserTable';
+const tableName = DYNAMODB_TABLE_NAME;
 
 // Create a DocumentClient that represents the query to add an item
 const AWS = require("aws-sdk");
-AWS.config.update({
-  accessKeyId: 'a',
-  secretAccessKey: 'a',
-  region: 'local',
-  // endpoint: 'http://172.24.222.138:8000',
-  endpoint: 'http://207.246.102.71:8000'
-});
+AWS.config.update(DYNAMODB_SETTING);
 const docClient = new AWS.DynamoDB.DocumentClient()
 
 /**
