@@ -3,7 +3,7 @@ import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import { FaFacebook } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
-import { GetUserProfile, SaveUser } from '../../services/UserService';
+import { GetUserProfile, SaveUser, UpdateUser } from '../../services/UserService';
 import { useSession } from '../../contexts/SessionContext'
 import Constant from '../../Constant';
 
@@ -14,11 +14,11 @@ const SocailLogin = () => {
     const checkLoginStatus = async (userData) => {
         const data = await GetUserProfile({email : userData.email});
 
-        if(data.length>0){
-            login(data[0]);
+        if(Object.getOwnPropertyNames(data).length > 0){
+            login(data.Item);
         }  else {
-            const userId = await SaveUser(userData);
-            login({...userData, _id: userId});
+            const userId = await UpdateUser(userData);
+            login({...userData});
         }
     }
 
@@ -30,8 +30,8 @@ const SocailLogin = () => {
         const profileImg = googleData.profileObj.imageUrl
 
         const userData = {
-            firstName : firstName,
-            lastName : lastName,
+            // firstName : firstName,
+            // lastName : lastName,
             profileImg : profileImg,
             email : email,
             password: 'Init~123',
@@ -55,8 +55,8 @@ const SocailLogin = () => {
         const profileImg = response.picture.data.url
 
         const userData = {
-            firstName : firstName,
-            lastName : lastName,
+            // firstName : firstName,
+            // lastName : lastName,
             profileImg : profileImg,
             email : email,
             password: 'Init~123',
